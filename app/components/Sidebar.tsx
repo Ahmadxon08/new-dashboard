@@ -76,7 +76,7 @@ const AppSidebar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Sidebar collapsible="icon" className="w-[300px]">
+    <Sidebar collapsible="icon" className="w-[300px] overflow-hidden">
       <SidebarHeader>
         <SidebarMenuItem>
           <SidebarMenuButton asChild>

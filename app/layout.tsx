@@ -40,9 +40,12 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <main className="w-full">
-              <Navbar />
-              <div className="px-4 w-full">{children}</div>
+            <main className="flex flex-col flex-1 px-1 w-full">
+              <div className="sticky bg-background top-0 py-2 z-10 ">
+                <Navbar />
+              </div>
+
+              <div className="flex-1 overflow-y-auto  py-6 ">{children}</div>
             </main>
           </SidebarProvider>
         </ThemeProvider>
